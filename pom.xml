@@ -17,7 +17,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.release>17</maven.compiler.release>
 
-        <reactor.version>2022.0.3</reactor.version>
+        <reactor.version>2022.0.4</reactor.version>
     </properties>
 
     <dependencyManagement>
