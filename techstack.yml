@@ -1,0 +1,194 @@
+repo_name: hantsy/reactor-examples
+report_id: 527c71321339615d29b770608fe8687f
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-31T08:11:17+00:00'
+requested_by: hantsy
+provider: github
+branch: master
+detected_tools_count: 15
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/hantsy/reactor-examples
+  detection_source: Repo Metadata
+- name: Project Reactor
+  description: Library for building non-blocking applications on JVM
+  website_url: https://projectreactor.io/
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Java Tools
+  image_url: https://img.stackshare.io/service/5807/default_cbd8ab670309059d7e315252d307d409aa40d793.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: renovate[bot]
+  last_updated_on: 2024-01-09 18:40:04.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/hantsy/reactor-examples
+  detection_source: Repo Metadata
+- name: JUnit
+  description: A programmer-oriented testing framework for Java
+  website_url: http://junit.org/
+  license: EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/2020/874086.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/src/test/resources/junit-platform.properties
+  detection_source: src/test/resources/junit-platform.properties
+  last_updated_by: Hantsy Bai
+  last_updated_on: 2023-01-28 10:07:49.000000000 Z
+- name: Logback
+  description: A logging framework for Java applications
+  website_url: https://logback.qos.ch/
+  open_source: false
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Log Management
+  image_url: https://img.stackshare.io/service/2923/05518ecaa42841e834421e9d6987b04f_400x400.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Hantsy Bai
+  last_updated_on: 2023-01-28 10:07:49.000000000 Z
+- name: SLF4J
+  description: Simple logging facade for Java
+  website_url: http://slf4j.org/
+  open_source: false
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Log Management
+  image_url: https://img.stackshare.io/service/2805/05518ecaa42841e834421e9d6987b04f_400x400.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Hantsy Bai
+  last_updated_on: 2023-01-28 10:07:49.000000000 Z
+- name: ch.qos.logback:logback-classic
+  description: Logback-classic module
+  version: 1.4.14
+  license: EPL-1.0,LGPL-2.1+
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Hantsy Bai
+  last_updated_on: 2023-01-28 10:07:49.000000000 Z
+- name: ch.qos.logback:logback-core
+  description: Logback-core module
+  version: 1.4.14
+  license: EPL-1.0,LGPL-2.1+
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Hantsy Bai
+  last_updated_on: 2023-01-28 10:07:49.000000000 Z
+- name: io.projectreactor:reactor-core
+  description: Non-Blocking Reactive Foundation for the JVM
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: renovate[bot]
+  last_updated_on: 2024-01-09 18:40:04.000000000 Z
+- name: io.projectreactor:reactor-test
+  description: Reactor Test support
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: renovate[bot]
+  last_updated_on: 2024-01-09 18:40:04.000000000 Z
+- name: org.hamcrest:hamcrest
+  description: Core API and libraries of hamcrest matcher framework
+  version: '2.2'
+  license: DSDP
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Hantsy Bai
+  last_updated_on: 2023-01-28 10:07:49.000000000 Z
+- name: org.junit.jupiter:junit-jupiter
+  description: Module "junit-jupiter" of JUnit 5
+  license: EPL-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Hantsy Bai
+  last_updated_on: 2023-01-28 10:07:49.000000000 Z
+- name: org.projectlombok:lombok
+  description: 'Spice up your java: Automatic Resource Management'
+  version: 1.18.30
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Hantsy Bai
+  last_updated_on: 2023-01-28 10:07:49.000000000 Z
+- name: org.slf4j:jcl-over-slf4j
+  description: JCL 1.2 implemented over SLF4J
+  version: 2.0.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Hantsy Bai
+  last_updated_on: 2023-01-28 10:07:49.000000000 Z
+- name: org.slf4j:slf4j-api
+  description: The slf4j API
+  version: 2.0.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/hantsy/reactor-examples/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: Hantsy Bai
+  last_updated_on: 2023-01-28 10:07:49.000000000 Z
