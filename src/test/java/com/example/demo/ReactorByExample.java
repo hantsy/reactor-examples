@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Flux;
 
+import java.util.concurrent.CompletableFuture;
 import java.util.stream.IntStream;
 
 
@@ -101,6 +102,18 @@ public class ReactorByExample {
     public void testSwitchIfEmpty() {
         var flux = Flux.empty();
         flux.switchIfEmpty(Flux.just(1, 2, 3, 4))
+                .subscribe(data -> log.debug("received: {}", data),
+                        error -> log.error("error:" + error.getMessage()),
+                        () -> log.debug("done")
+                );
+    }
+
+    @Test
+    public void fluxFromCompleteableFuture() {
+        var future = CompletableFuture.supplyAsync(() -> "test")
+                .thenApplyAsync(String::toUpperCase);
+        Flux
+                .create(emitter -> future.thenAccept(emitter::next).join())
                 .subscribe(data -> log.debug("received: {}", data),
                         error -> log.error("error:" + error.getMessage()),
                         () -> log.debug("done")
